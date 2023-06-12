@@ -1,0 +1,235 @@
+<!--
+    1.full stack development whole process(ISP,DNS server,stacks(Frontend,Backend,Database))
+    2.course details(HTML,CSS,JS,REACTJS,NODEJS,EXPRESSJS,SQL,MONGODB)
+
+    3.Code editors(notepad,VScode)
+
+    4.Benefits of VS code(extensions,source control)
+
+    5.HTML intro(who invented what,html no need internet to render,<!DOCTYPE html,html,head,body elements)
+
+    6.Live server and git (sourcecontrol commit,push,pull)
+
+    7.tag,element,types of elements(nested elements,empty elements)
+
+    8.Paths in HTML (relative & absolute) use of paths - images,css file,js file,external links,links to another html page of same project
+
+    9.Head element(title,meta(charset encoding,viewport),script,link,style)
+
+    10.Headings(h1-h6)
+
+    11.Paragraphs,pre element
+
+    12.Formatting tags in HTML(b,strong,i,em,del,mark,ins,small,sub,sup)
+
+    13.blockquote element(when we want to use block of lines from some other resource- we get indented content)
+
+    14.q element(when we want to use Short line/single sentence from other resource - we get quoted content)
+
+    15.links (a element, href attribute, target attribute (_self,_blank,_parent,_top))
+
+    16.image tag <img src="" alt="">
+
+    17.favicon (link tag used, rel attribute(relationship of linked document to the current document),href attribute(file path/url)) , favicon.cc (.ico format favicons)
+
+    18.Lists - record of short pieces of related data
+       unordered lists - used when defining the order of the elements is not important <ul> <li> </li> </ul>
+
+    19.Ordered lists - used when defining order is important and order has a preference <ol> <li> </li> </ol>
+
+    20.description lists - used when there is a need of description for every item of the list . <dl> helps in adding the description for each item in the list.    <dl> <dt></dt> <dd></dd> </dl>        
+
+    21.table - we will fill the table row wise. <table> <tr> <th></th> </tr> <tr> <td></td> </tr> </table>
+
+    22.caption - by default it is center top of the table
+
+    23.thead,tbody,tfoot - we can use tr,th instead . but the reason why we use these is to apply individual style for each block .
+
+    24.types of elements(block level elements, inline elements)
+
+    25.div element - block level container which will modularize the code and which will helps in applying common style to group of elements which besides each other
+
+    26.span element - inline container which will modularize the code and which will helps in applying common style to group of elements which besides each other
+
+    note : block level inside inline or inline inside blocklevel will not change their original properties
+
+    27.class - It is an attribute which can be used in any element.main purpose is for styling.multiple elements can have same class name.
+
+    28.id - Ids are attributes that we can define.But we can only have one unique id value in the entire html doc.we can use id to style a single element rather than class.
+
+    29.Entities - are used to replace reserved symbols/characters which cant be used freely in coding  &lt; &#60;
+
+    30.symbols
+
+    31.emojis
+
+
+
+
+
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Document</title>
+    <style>
+        #Heading{
+             background-color: coral;
+        }
+        h2.lists{
+            background-color:rgb(93, 173, 175);
+        }       
+        strong,pre{
+            background-color:rgb(93, 173, 175);
+        }
+        b.entities{
+            background-color: blue;
+        }
+
+        *{
+            font-style: italic;
+        }
+        /*descendant selector*/
+        div h2{
+            color: brown;
+        }
+        /*child selector*/
+        div>h2{
+            color: chartreuse;
+        }
+        /*adjacent sibiling selector*/
+       i + em{
+            color: blueviolet;
+        }
+        /*general sibiling selector*/
+        small ~ ins {
+            color: deeppink;
+        }
+
+    </style>
+</head>
+<body>
+    <span>
+    <h2 id="Heading">Summary of the FSD Course</h2>
+    <img src="favicon.png" alt="favicon image"><br>
+    <img src="Images/BTS.jpg" alt="bts image"><hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></span><hr>
+    <pre>
+        twinkle twinkle little star
+        How i wonder what you are
+        Up above the world so high
+        Like a diamond in the sky
+    </pre><hr>
+    <p class="Formatting">
+        <b>This is b</b><br>
+        <strong>This is strong</strong><br>
+        <i>This is itallic</i>
+        <em>This is emphasized text</em><br>
+        <small>this is one level smaller text</small><br>
+        <del>This is deleted text</del><br>
+        <mark>This is highlighted text</mark><br>
+        <ins>This is inserted text</ins><br>
+        <p>H<sub>2</sub>O</p>
+        <p>a<sup>2</sup>+b<sup>2</sup></p>
+    </p><hr>
+    <p>Poem for kids
+    <blockquote cite="https://www.rd.com/list/popular-short-poems-for-kids/">
+        I never saw a purple cow,
+        I never hope to see one,
+        But I can tell you, anyhow,
+        I’d rather see than be one!
+        </blockquote></p><hr>
+    <p><q cite="https://www.goodreads.com/author/quotes/5810891.Mahatma_Gandhi">God has no religion.</q> said Mahatma Gandhi</p><hr>
+    <a target="_self" href="https://www.google.com/">self target</a><br>
+    <a target="_blank" href="https://www.google.com/">blank target</a><br>
+    <a target="_parent" href="task2.html">parent target</a><br>
+    <a target="_top" href="task2.html">top target</a><br><hr>
+    <div class="lists">
+        <h2>This is for skills</h2>
+        <ul>
+            <h2>Skills</h2>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+        <section>
+            <p>
+                <h2>Skills part is done</h2>
+            </p>
+        </section>
+        
+    </div >
+    <div class="lists">
+        <ol>
+            <h2>preferred locations</h2>
+            <li>Hyderabad</li>
+            <li>Mangalore</li>
+            <li>Kochi</li>
+        </ol>
+    </div>
+    <div class="lists">
+        <dl>
+            <h2>known Languages</h2>
+            <dt>English</dt>
+            <dd>-Can Speak,read and write</dd>
+            <dt>Teugu</dt>
+            <dd>-Can Speak,read and write</dd>
+            <dt>Hindi</dt>
+            <dd>-Can read and write and speak a bit</dd>
+        </dl>
+    </div>    
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Stu Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>AAA</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>BBB</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>CCC</td>
+                <td>40</td>
+            </tr>       
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>total:</td>
+                <td>135</td>
+            </tr>
+        </tfoot>
+        <caption>table1.1 Students Marklist</caption>
+    </table><hr>  
+    <div class="entities">
+        <b class="entities">less than : &lt;</b>
+        <strong class="entities">less than : &#60;</strong>
+        <b class="entities">greater than : &gt;</b>
+        <b class="entities">ampersand : &amp; &quot; &apos; &cent; &pound; &euro; &copy; &reg;</b>
+    </div>  
+    <p>it's the end</p>
+        
+</body>
+</html>
+

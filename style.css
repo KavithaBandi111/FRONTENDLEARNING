@@ -1,0 +1,17 @@
+#Heading{
+    background-color: rgb(5, 90, 90);
+    color: aliceblue;
+    text-align: center;
+}
+.abstract{
+    color: crimson;
+}
+p.introcontent{
+    background-color: bisque;
+}
+*{
+    opacity: 0.85;
+}
+div,h2{
+  float: right;
+}
