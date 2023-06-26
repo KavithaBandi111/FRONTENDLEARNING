@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        div.static{
+            position:static;
+            border : 5px ridge black;
+            background-color: chartreuse;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        div.fixed{
+            position:fixed;
+            border : 5px ridge black;
+            background-color: chartreuse;
+            padding: 10px;
+            border-radius: 10px;           
+        }
+        div.relative{
+            position:relative;
+            border : 5px ridge black;
+            background-color: chartreuse;
+            padding: 10px;
+            border-radius: 10px;
+            top: 150px;
+            left: 50px;
+            height: 250px;
+            width: 500px;
+            
+        }
+       
+        div.absolute{
+            position:absolute;
+            border : 5px ridge black;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            right: 0;
+            height: 100px;
+            width: 250x;
+            top: 100px;
+                      
+        }
+
+    </style>
+</head>
+<body>
+    <div class="1">
+        <h1 class="1">first heading</h1>
+        <p class="1">first element</p>
+        <p class="1">second element</p>
+    </div>
+    <div class="2">
+        <p class="2">third element</p>
+        <p class="2">fourth element</p>
+        <p class="2">fifth element</p>
+        <h2>end</h2>
+    </div>
+    <div class="static">
+        This div element has position: static;
+    </div>
+    <div class="fixed">
+        This div element has position: fixed;
+    </div>
+    <div class="relative">
+        This div element has position: relative;
+        <div class="absolute">
+            This div element has position: absolute;
+        </div>
+    </div>
+    <p style="text-align: center;">------- completed-------</p>
+    
+    
+    
+</body>
+</html>
