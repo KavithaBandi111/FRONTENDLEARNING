@@ -4,30 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TourTastic</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/Images/Tourism_favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <style>
-      .navbar{
-        position: relative;
-        height: 65px;
-        width: 100%;
-      }
-      .Image{
-        position: absolute;
-        left:400px;
-        bottom: 0px;
-        padding: 5px;       
-      }
-      .Image2{
-        position: absolute;
-        
-        opacity: 0.6;
-        rotate: 10deg;
-        
-      }
-    </style>
   </head>
-  <body>
+  <body style="background-color: black;">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="Image">
@@ -81,11 +62,11 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="card m-3">
+    <div class="card m-4">
       <div class="card-header">
         <b>Let's Plan!</b>
       </div>
-      <form class="row g-3">
+      <form class="row g-3 m-2">
         <div class="col-md-6">
           <label for="fromLocation" class="form-label"><b>From</b></label>
           <input type="text" class="form-control" id="fromLocation" placeholder="From">
@@ -102,7 +83,7 @@
           <label for="passengerNo" class="form-label"><b>No. of Passengers</b></label>
           <input type="number" class="form-control" id="passengerNo" placeholder="no. of passengers ">
         </div>
-        <div class="col">
+        <div class="col-12">
           <label for="mode" class="form-label"><b>Mode</b></label>
           <select id="mode" class="form-select">
             <option selected>Choose...</option>
@@ -112,27 +93,47 @@
             <option>Flight</option>
           </select>
         </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Check Options</button>
+        <div class="col-12 mt-4">
+          <button type="submit" class="btn btn-success">Check Options</button>
         </div>
       </form>
     </div>
-    <div class="row">
+    <div class="row m-3">
       <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Andhra Pradesh Tour Packages</h5>
+            <p class="card-text">If you are looking for a memorable Andhra Pradesh trip, TourTastic packages are the right choice for you. TourTastic offers the widest range of customizable Andhra Pradesh tour to suit every kind of traveler from anypart of the world.</p>
+            <a href="#" class="btn btn-success">Book now!</a>
           </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Kerala Tour Packages</h5>
+            <p class="card-text">If you are looking for a memorable Kerala trip, TourTastic packages are the right choice for you. TourTastic offers the widest range of customizable Kerala tour to suit every kind of traveler from anypart of the world.</p>
+            <a href="#" class="btn btn-success">Book now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row m-3">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Maldives Tour Packages</h5>
+            <p class="card-text">If you are looking for a memorable Maldives  trip, TourTastic packages are the right choice for you. TourTastic offers the widest range of customizable Maldives  tour to suit every kind of traveler from anypart of the world.</p>
+            <a href="#" class="btn btn-success">Book now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Badrinath Kedarnath Tour Packages</h5>
+            <p class="card-text">If you are looking for a memorable Badrinath Kedarnath trip, TourTastic packages are the right choice for you. TourTastic offers the widest range of customizable Badrinath Kedarnath tour to suit every kind of traveler from anypart of the world.</p>
+            <a href="#" class="btn btn-success">Book now!</a>
           </div>
         </div>
       </div>

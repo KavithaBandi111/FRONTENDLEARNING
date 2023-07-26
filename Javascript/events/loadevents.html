@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load events</title>
+</head>
+<body onload="loading()" onunload="unloading()" onerror="error()" onresize="resizing()">
+    <h1>Load Events</h1>
+    <img onerror="error()" src="projects/Tourism_favicon.png" alt="favicon">
+
+    <script>
+        function loading(){
+            alert("loading");
+        }
+        function unloading(){
+            alert("closing");
+        }
+        function error(){
+            alert("loading error");
+        }
+        function resizing(){
+            alert("are you sure?");
+        }
+
+    </script>
+</body>
+</html>

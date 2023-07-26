@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InputEvents</title>
+</head>
+<body>
+    
+    <h1>Input Events</h1>
+    <label for="name" id="Name" class="inputField">Name</label>
+    <input onkeyup="keyup(this)" onkeypress="keypress(this)" onkeydown="keydown(this)" onblur="blurring(this)" oninput="changing(this)" onfocus="focussing(this)" onselect="selecting(this)" type="text" id="name" placeholder="Full Name" class="inputField">
+    <p id="note" style="color: brown;"></p>
+    <input onblur="blurring(this)" onchange="changing(this)" type="mail" id="mail" placeholder="emailId" class="inputField"><br><br>
+    <img src="/projects/Tourism_favicon.png" alt="favicon">
+    <button type="submit" onclick="submitting(this)">Submit</button>
+    <button type="reset" onclick="resetting(this)">Reset</button><br><br>
+
+    <script>
+        document.getElementById("Name").style.display='block';
+        document.getElementById("Name").style.fontSize='25px';
+        document.getElementById("Name").style.margin='25px 25px 25px 0';
+        document.getElementById("name").style.fontSize='25px';
+        document.getElementById("name").style.display='block';
+        document.getElementById("name").style.margin='25px 25px 25px 0';
+        // const elements= document.getElementsByTagName("body");
+        // elements[0].style.backgroundColor="red";
+
+        document.body.style.backgroundColor="#eee";
+
+        document.write("this is added html through javascript");
+
+        function blurring(input){
+            
+            input.style.color="blue";
+        }
+        function changing(input){
+            input.style.color="red";
+        }
+        function focussing(input){
+            input.style.backgroundColor="yellow";
+        }
+        function selecting(input){
+            document.getElementById("note").innerHTML="Enter alphabets Only";
+        }
+        function submitting(){
+            alert("Data submitted successfully!!");
+        }
+        function resetting(){
+            alert("reset successful!!");
+        }
+        function keydown(input){
+            input.style.backgroundColor="black";
+        }
+        function keypress(input){
+            input.style.backgroundColor="brown";
+        }
+        function keyup(input){
+            input.style.backgroundColor="green";
+        }
+        
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedulers</title>
+</head>
+<body>
+    <h1>Schedulers</h1>
+    <script>
+        function abc(){
+            console.log("I am printing in abc");
+        }
+
+        console.log("Hello");
+        
+
+        let a=setInterval(abc,500);
+
+        function clear(){
+            clearInterval(a);
+        }
+        let b=setTimeout(clear, 1000);
+    </script>
+</body>
+</html>
